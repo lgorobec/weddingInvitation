@@ -1,10 +1,14 @@
 language: node_js # Для сборки нужен будет NodeJS
 node_js:
   stable # Выбираем последню стабильную версию NodeJS
+before_install:
+  - export CHROME_BIN=chromium-browser
 before_script:
   - npm install -g angular-cli
   - npm install -g karma
   - npm install
+services:
+  - xvfb
 script:
   npm run build # Запускаем продакшен-сборку, скрипт из `package.json`
 before_install:
