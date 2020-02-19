@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
-import {first} from 'rxjs/operators';
-import {fadeInUpOnEnterAnimation} from 'angular-animations';
+import { ActivatedRoute } from '@angular/router';
+import { first } from 'rxjs/operators';
+import { fadeInUpOnEnterAnimation } from 'angular-animations';
 
 @Component({
   selector: 'app-invitation',

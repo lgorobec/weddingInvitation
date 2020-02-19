@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
-import {first} from 'rxjs/operators';
-import {bounceInLeftOnEnterAnimation, flashOnEnterAnimation, shakeOnEnterAnimation} from 'angular-animations';
+import { ActivatedRoute, Router } from '@angular/router';
+import { first } from 'rxjs/operators';
+import { bounceInLeftOnEnterAnimation, shakeOnEnterAnimation } from 'angular-animations';
 
 @Component({
   selector: 'app-letter',
@@ -18,8 +18,10 @@ export class LetterComponent implements OnInit {
   isOpening = false;
   paramsForRedirect = {};
 
-  constructor(private router: Router,
-              private activatedRoute: ActivatedRoute) { }
+  constructor(
+    private router: Router,
+    private activatedRoute: ActivatedRoute,
+  ) { }
 
   ngOnInit(): void {
     this.activatedRoute.params
