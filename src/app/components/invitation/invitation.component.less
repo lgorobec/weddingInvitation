@@ -1,0 +1,51 @@
+@tablet: ~"(max-width: 951px)";
+
+.invitation {
+  background: #7dc2bd;
+  background: url('../../../assets/bg.jpg') center no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+
+  &__title {
+    margin: 0;
+    padding: 6em 1em 2em;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.2em;
+  }
+
+  &__i {
+    color: #fff;
+    padding: 0 23% 70px;
+    text-align: justify;
+    text-indent: 2em;
+    font-size: 20px;
+
+    @media @tablet {
+      padding: 0 20px 70px;
+    }
+  }
+
+  &__names {
+    font-weight: 700;
+    font-size: 24px;
+    color: #fad3cc;
+  }
+
+  &__span {
+    font-weight: 700;
+    color: #fad3cc;
+  }
+
+  &__end {
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    letter-spacing: .2em;
+  }
+
+  &__rose {
+    width: 40px;
+  }
+}

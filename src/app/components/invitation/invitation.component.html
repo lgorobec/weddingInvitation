@@ -1,0 +1,14 @@
+<div class="invitation">
+  <h1 class="invitation__title" [@fadeInUpOnEnter] *ngIf="toAnimate">Приглашение на свадьбу!</h1>
+  <div class="invitation__i" [@fadeInUpOnEnter] *ngIf="toAnimate">
+    <p class="invitation__names" *ngIf="names.length > 1">Дорогие {{ title }}!</p>
+    <p class="invitation__names" *ngIf="names.length === 1">Дорогой {{ title }}!</p>
+    <p class="invitation__text">Спешим поделиться с вами нашей радостью:
+      <span class="invitation__span">12 июня 2020 года</span> состоится наша свадьба.
+      Мы будем рады, если Вы почтите наше торжество своим вниманием и разделите наше счастье!
+      Празднование этого торжественного события пройдет в <span class="invitation__span">ресторане "Терасса" гостиницы "Темиринда"</span> в
+      <span class="invitation__span">17:00 часов</span> по адресу: <span class="invitation__span">г.Таганрог, ул. Портовая, д. 1-2</span>.</p>
+    <p class="invitation__text">Ждем Вас на нашем празднике!</p>
+    <h3 class="invitation__end">Ваши Эльдар и Лариса<img src="../../../assets/rose.svg" alt="rose" class="invitation__rose"></h3>
+  </div>
+</div>

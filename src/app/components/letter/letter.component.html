@@ -1,0 +1,9 @@
+<div class="envelope">
+  <h1 class="envelope__title" [@bounceInLeftOnEnter]>Вам пришло письмо!</h1>
+  <div class="envelope__i" [ngClass]="{'envelope__i_opening': isOpening}" [@shakeOnEnter]>
+    <div class="envelope__paper" [ngClass]="{'envelope__paper_active': isActive, 'envelope__paper_opening': isOpening}"></div>
+  </div>
+  <div class="envelope__button">
+    <button class="envelope__btn" (click)="openLetter()" [@bounceInLeftOnEnter]>Открыть</button>
+  </div>
+</div>
